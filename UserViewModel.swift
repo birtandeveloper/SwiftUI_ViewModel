@@ -45,8 +45,9 @@ struct ViewModel: View {
         NavigationView {
             List {
                 
-                if (userViewModel.isLoading) {
-                    ProgressView() } else {
+                if (userViewModel.isLoading) {                    
+                    ProgressView()                    
+                } else {
                         
                         ForEach(userViewModel.userList) { user in
                             HStack {
@@ -92,3 +93,4 @@ struct ViewModel: View {
         }
     }
 }
+
