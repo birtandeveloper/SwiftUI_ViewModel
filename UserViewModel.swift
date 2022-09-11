@@ -22,7 +22,7 @@ class UserViewModel: ObservableObject {
         
         isLoading = true
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) { [self] in
-            self.userList.append(contentsOf: [user1, user2, user3, user4]   )
+            self.userList.append(contentsOf: [user1, user2, user3, user4])
             self.isLoading = false
         }
         
